@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: #0e1015;
+  color: #e4e4e7;
+  font-family: "Inter", "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+::selection { background: rgba(56, 189, 248, 0.3); }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.08); border-radius: 8px; border: 2px solid transparent; background-clip: padding-box; }
+::-webkit-scrollbar-thumb:hover { background-color: rgba(255, 255, 255, 0.15); }
+select option { background: #18181b; }
+input[type="number"]::-webkit-inner-spin-button { opacity: 0.4; }
+.xterm-viewport::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.12); }
