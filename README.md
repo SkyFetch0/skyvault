@@ -16,6 +16,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?logo=windows&logoColor=white)](#requirements)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
+[![Release](https://img.shields.io/github/v/release/SkyFetch0/skyvault?logo=github&label=Release)](https://github.com/SkyFetch0/skyvault/releases/latest)
 
 ---
 
@@ -25,7 +26,7 @@
 ![Terminal](https://img.shields.io/badge/Terminal-xterm.js-1F2937?logo=windowsterminal&logoColor=white)
 ![Languages](https://img.shields.io/badge/UI-English%20%7C%20T%C3%BCrk%C3%A7e%20%7C%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%7C%20%E4%B8%AD%E6%96%87-0EA5E9)
 
-**[Screenshots](#screenshots)** · **[Features](#features)** · **[Security model](#security-model)** · **[Getting started](#getting-started)** · **[Usage notes](#usage-notes)** · **[Project layout](#project-layout)** · **[Roadmap](#roadmap)**
+**[Download](#download)** · **[Screenshots](#screenshots)** · **[Features](#features)** · **[Security model](#security-model)** · **[Getting started](#getting-started)** · **[Usage notes](#usage-notes)** · **[Project layout](#project-layout)** · **[Roadmap](#roadmap)**
 
 </div>
 
@@ -96,6 +97,17 @@ All data in these pictures is made up: the addresses come from the documentation
   - Only supports listing identities and signing; keys cannot be added from outside the vault.
   - Every signature needs user approval, so other software on the machine cannot use your keys silently.
 - **Webview hardening:** strict CSP; Tauri capabilities kept to the minimum (`src-tauri/capabilities/default.json`).
+
+## Download
+
+Get the latest build from **[Releases](https://github.com/SkyFetch0/skyvault/releases/latest)**:
+
+| File | What it is |
+| --- | --- |
+| `SkyVault_<version>_x64-setup.exe` | Installer (per user, no admin rights needed), adds a Start menu entry |
+| `SkyVault_<version>_x64_portable.exe` | Single executable, no installation — run it from anywhere, e.g. a USB drive |
+
+Requires Windows 10/11 with WebView2 (included in Windows 11). The builds are not code-signed yet, so Windows SmartScreen may warn on first launch: choose *More info → Run anyway*. Each release lists SHA-256 checksums so you can verify the download.
 
 ## Getting started
 
